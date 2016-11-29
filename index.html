@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Pizza order</title>
+  <link rel="stylesheet" href="css/globalStyles.css">
+</head>
+
+<body>
+
+  <div class="site">
+
+    <div class="logo">  
+      <img src="images/site/pizza-man.jpg" width="207" height="154" alt="Pizza order" />
+    </div>
+
+    <div id="allPizzas"></div>
+
+    <div id="copy"></div>
+
+  </div> 
+
+    <script id="pizzaElement" type="text/template">
+      <a href="#<%= link %>"><img src="<%= img %>" alt="<%= name %>" class="image" /></a>
+      <ul>
+        <li class="pizzaInfo"><strong>Name:</strong> <%= name %></li>
+        <li class="pizzaInfo"><strong>Price:</strong> <%= price %></li>
+        <li class="pizzaInfo"><strong>Size:</strong> <%= size %></li>
+      </ul>
+    </script>
+
+
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/underscore.js"></script>
+  <script src="js/libs/backbone.js"></script>
+  <script src="js/models/singlePizzaModel.js"></script>
+  <script src="js/views/singlePizzaView.js"></script>
+  <script src="js/views/allPizzaView.js"></script>
+  <script src="js/collections/allPizzas.js"></script>
+  <script src="js/routes/router.js"></script>
+  <script src="js/pizzaApp.js"></script>
+
+</body>
+</html>
